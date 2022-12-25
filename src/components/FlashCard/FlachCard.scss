@@ -1,0 +1,116 @@
+.flachCard{
+    padding:5rem 0;
+    width: 100%;
+    .slick-slider{
+        position: relative;
+        .btn{
+            .Next,.prev{
+                position: absolute;
+                top: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                background-color: #e94564;
+                border: none;
+                width: 40px;
+                height: 40px;
+                color: #fff;
+                font-size: 2rem;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+            .prev{
+                left: 40px;
+            }
+            .Next{
+                right: 0;
+            }
+        }
+    }
+    .box{
+        transition: .4s ease-in-out;
+        .product{
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: rgb(3 0 71 /9% ) 0 1px 3px;
+            background-color: #fff;
+            margin: 10px;
+
+        }
+        &:hover .right{
+            display: flex !important;
+            // background-color: red;
+        }
+        .top{
+            display: flex;
+            height: 70px;
+            .right{
+                // display: flex;
+                display: none;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                flex: 1;
+                transition: .4s ease-in-out;
+                span{
+                    background-color: #0f3460;
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+
+                }
+                svg{
+                    color: #e94564;
+                    fill: red;
+                }
+            }
+            .discount{
+                background-color: #e94564;
+                width:fit-content;
+                padding: .2rem .5rem;
+                border-radius: 20px;
+                color: #fff;
+                height: fit-content;
+            }
+        }
+        .text{
+            display: flex;
+           .left,.right{
+            flex: 1;
+           }
+           .left{
+            width: 100%;
+            svg{
+                width: 15px;
+            }
+           }
+           .right{
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            color: #e94564;
+            flex: 1;
+            svg{
+                border-radius: 5px;
+                border: 1px solid;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                    background-color: #e94564;
+                    color: #fff;
+                }
+            }
+           }
+        }
+        .img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

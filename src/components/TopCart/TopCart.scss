@@ -1,0 +1,48 @@
+.topCart{
+    padding: 3rem 0 4rem;
+    .head{
+        display: flex;
+        align-items: center;
+        &>*{
+            flex: 1;
+        }
+        span{
+            display: flex;
+            justify-content: end;
+        }
+    }
+    .box{
+        .col{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            position: relative;
+            margin: 10px;
+            background-color: #fff;
+            padding: 20px;
+            .top{
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: auto;
+                .left{
+                    color: #fff;
+                    background-color: #0f3460;
+                }
+                .right{
+                    color: #0f3460;
+                    background-color: #fff;
+                }
+                .left,.right{
+                    padding: .1rem .6rem;
+                    border-radius: 14px;
+                }
+            }
+        }
+        .img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

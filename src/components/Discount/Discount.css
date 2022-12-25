@@ -1,0 +1,26 @@
+.discount {
+  padding: 4rem 0;
+}
+.discount .head {
+  display: flex;
+  align-items: center;
+}
+.discount .head > * {
+  flex: 1;
+}
+.discount .head span {
+  display: flex;
+  justify-content: end;
+}
+.discount .box .col {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: rgba(3, 0, 71, 0.09) 0 1px 3px;
+}
+.discount .box .col .img {
+  width: 100%;
+}
+.discount .box .col .img img {
+  width: 100%;
+}

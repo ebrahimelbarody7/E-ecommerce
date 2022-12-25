@@ -1,0 +1,50 @@
+.brands{
+    background-color: #fff;
+    padding: 15px;
+    min-width:  200px !important;
+    height: fit-content;
+    .head{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        h3,span{
+            flex: 1;
+        }
+        span{
+            display: flex;
+            justify-content: end;
+            border-left: 2px solid #ccc;
+        }
+    }
+    ul{
+        li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #f6f9fc;
+            padding: 5px;
+            cursor: pointer;
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+    .allBarands{
+        padding: 4rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            background-color: #f6f9fc;
+            padding: 10px;
+            font-weight: 400;
+        }
+
+    }
+}
+
+@media(max-width:767px){
+    .brands{
+        display: none;
+    }
+}

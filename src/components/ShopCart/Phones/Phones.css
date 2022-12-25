@@ -1,0 +1,105 @@
+.phone h2 {
+  margin-top: 0;
+}
+.phone .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.phone .row .col {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: rgba(3, 0, 71, 0.09) 0 1px 3px;
+}
+.phone .row .col:hover .head .right {
+  display: flex;
+}
+.phone .row .col .head {
+  display: flex;
+  height: 40px;
+}
+.phone .row .col .head > * {
+  flex: 1;
+}
+.phone .row .col .head .left h4 {
+  font-weight: 400;
+  padding: 4px 8px;
+  background-color: #e94564;
+  color: #fff;
+  margin: 0;
+  border-radius: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.phone .row .col .head .right {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.4s ease-in-out;
+}
+.phone .row .col .head .right .count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0f3460;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone .row .col .img {
+  width: 100%;
+}
+.phone .row .col .img img {
+  width: 100%;
+}
+.phone .row .col .stars svg {
+  width: 14px;
+}
+.phone .row .col .price {
+  color: #e94564;
+}
+.phone .row .col .bottom {
+  display: flex;
+}
+.phone .row .col .bottom > * {
+  flex: 1;
+}
+.phone .row .col .bottom .right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.phone .row .col .bottom .right .add {
+  border: 1px solid #ccc;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.phone .row .col .bottom .right .add:hover {
+  background-color: #e94564;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .phone .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .phone .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .phone .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,68 @@
+.footer {
+  padding: 4rem 0;
+  background-color: #0f3460;
+  color: #fff;
+}
+.footer .row {
+  display: flex;
+}
+.footer .row .box {
+  flex: 1;
+  gap: 1rem;
+}
+.footer .row .box .logo h3 {
+  color: #e94564;
+  font-size: 25px;
+}
+.footer .row .box .logo p {
+  width: 80%;
+  color: #fff;
+  opacity: 0.5;
+  line-height: 1.5;
+}
+.footer .row .box .logo .download {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .row .box .logo .download span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer .row .box h3 {
+  margin-bottom: 30px;
+}
+.footer .row .box ul li {
+  margin-bottom: 10px;
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .row .box .contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer .row .box .contact input {
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  padding: 4px 10px;
+}
+.footer .row .box .contact input:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.footer .row .box .contact input:last-child:hover {
+  background-color: #e94564;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .footer .row {
+    flex-direction: column;
+  }
+}

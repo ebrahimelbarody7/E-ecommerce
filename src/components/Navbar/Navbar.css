@@ -1,0 +1,81 @@
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  padding: 0.5rem 0;
+  position: relative;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 104px;
+  z-index: 1000;
+}
+.navbar .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .row .left {
+  flex: 1;
+}
+.navbar .row .right {
+  flex: 2;
+}
+.navbar .row .left .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f6f9fc;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.navbar .row .left .box svg {
+  display: block !important;
+}
+.navbar .row .right {
+  display: flex;
+  justify-content: end;
+}
+.navbar .row .right ul {
+  display: flex;
+  gap: 1rem;
+}
+.navbar .row .right ul a {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+.navbar .row .right ul a:hover {
+  color: red;
+}
+.navbar .row svg {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    top: 74px;
+  }
+  .navbar .right {
+    position: absolute !important;
+    top: 0px;
+    left: 0;
+    transform: translateX(-200px);
+    transition: 0.4s ease-in-out;
+  }
+  .navbar .right ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 2rem;
+  }
+  .navbar .right.active {
+    transform: translateX(0);
+  }
+  .navbar svg {
+    display: block !important;
+  }
+}

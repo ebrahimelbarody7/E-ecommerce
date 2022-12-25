@@ -1,0 +1,114 @@
+.flachCard {
+  padding: 5rem 0;
+  width: 100%;
+}
+.flachCard .slick-slider {
+  position: relative;
+}
+.flachCard .slick-slider .btn .Next, .flachCard .slick-slider .btn .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #e94564;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.flachCard .slick-slider .btn .prev {
+  left: 40px;
+}
+.flachCard .slick-slider .btn .Next {
+  right: 0;
+}
+.flachCard .box {
+  transition: 0.4s ease-in-out;
+}
+.flachCard .box .product {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(3, 0, 71, 0.09) 0 1px 3px;
+  background-color: #fff;
+  margin: 10px;
+}
+.flachCard .box:hover .right {
+  display: flex !important;
+}
+.flachCard .box .top {
+  display: flex;
+  height: 70px;
+}
+.flachCard .box .top .right {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  transition: 0.4s ease-in-out;
+}
+.flachCard .box .top .right span {
+  background-color: #0f3460;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.flachCard .box .top .right svg {
+  color: #e94564;
+  fill: red;
+}
+.flachCard .box .top .discount {
+  background-color: #e94564;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.flachCard .box .text {
+  display: flex;
+}
+.flachCard .box .text .left, .flachCard .box .text .right {
+  flex: 1;
+}
+.flachCard .box .text .left {
+  width: 100%;
+}
+.flachCard .box .text .left svg {
+  width: 15px;
+}
+.flachCard .box .text .right {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  color: #e94564;
+  flex: 1;
+}
+.flachCard .box .text .right svg {
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.flachCard .box .text .right svg:hover {
+  background-color: #e94564;
+  color: #fff;
+}
+.flachCard .box .img {
+  width: 100%;
+}
+.flachCard .box .img img {
+  width: 100%;
+}

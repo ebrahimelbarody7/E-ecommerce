@@ -1,0 +1,7 @@
+.shopCart .container {
+  display: flex;
+  gap: 2rem;
+}
+.shopCart .container .phones {
+  flex: 1;
+}

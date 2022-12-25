@@ -1,0 +1,108 @@
+.cart {
+  padding: 170px 0 50px;
+}
+.cart .row {
+  display: flex;
+  gap: 3rem;
+}
+.cart .left {
+  flex: 1;
+}
+.cart .left .box {
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20px;
+  height: 150px;
+}
+.cart .left .box .product {
+  gap: 2rem;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.cart .left .box .product .img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart .left .box .product .img img {
+  width: 100%;
+}
+.cart .left .box .product .text {
+  display: flex;
+  flex-direction: column;
+}
+.cart .left .box .product .text .bottom {
+  display: flex;
+  gap: 2rem;
+}
+.cart .left .box .product .action {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cart .left .box .product .action .del {
+  margin-left: auto;
+  color: #e94564;
+  cursor: pointer;
+}
+.cart .left .box .product .action .bottom {
+  display: flex;
+  gap: 2rem;
+  margin-top: auto;
+  color: #e94564;
+}
+.cart .left .box .product .action .increase, .cart .left .box .product .action .dec, .cart .left .box .product .action .del {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+.cart .left .box .product .action .increase:hover, .cart .left .box .product .action .dec:hover, .cart .left .box .product .action .del:hover {
+  background-color: #e94564;
+  color: white;
+}
+.cart .right {
+  width: 300px;
+}
+.cart .right .summary {
+  background-color: #fff;
+  padding: 10px;
+}
+.cart .right .summary h3 {
+  color: #e94564;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.cart .right .summary .price {
+  display: flex;
+}
+.cart .right .summary .price span {
+  color: #e94564;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .cart .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .row .box {
+    width: 100%;
+    height: 100% !important;
+  }
+  .row .box .product {
+    flex-direction: column;
+  }
+}
